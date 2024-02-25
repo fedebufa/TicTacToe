@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(154, 105, 16);
+}
+h1{
+    text-align: center;
+    margin-top: 1rem;
+    animation: animation 5s ease-in;
+}
+@keyframes animation {
+    0%{
+        color: brown;
+        border-color:brown ;
+    }
+    50% {
+        color: blue;
+        border-color: blue;
+    }
+    100% {
+        color: black;
+        border-color: black;
+    }
+}
+.container {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.cell {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border-radius: 6px;
+    margin: 0.1rem;
+    animation: animation 5s ease-in;
+}
+
+button{
+    width: 8rem;
+    font-size: 2rem;
+    appearance: none;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    transition: transform 3s step-end;
+}
+button:active{
+    transform: scale(0.9);
+    background-color: darkslategray;
+}
+h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
